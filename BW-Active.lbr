@@ -1729,6 +1729,21 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-1.4016" y1="2.2828" x2="-1.1984" y2="3.121" layer="51"/>
 <rectangle x1="-2.0516" y1="2.2828" x2="-1.8484" y2="3.121" layer="51"/>
 </package>
+<package name="DO-214AA">
+<smd name="A" x="-2.2352" y="0" dx="2.032" dy="2.1082" layer="1"/>
+<smd name="K" x="2.2352" y="0" dx="2.032" dy="2.1082" layer="1"/>
+<wire x1="-2.35" y1="1.9" x2="0.8" y2="1.9" width="0.127" layer="21"/>
+<wire x1="0.8" y1="1.9" x2="2.35" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-1.9" x2="0.8" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.9" x2="2.35" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="1.9" x2="-2.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.35" y1="1.9" x2="2.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-1.9" x2="2.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-1.9" x2="-2.35" y2="-1.3" width="0.127" layer="21"/>
+<rectangle x1="0.5" y1="-1.9" x2="1" y2="1.9" layer="21"/>
+<text x="-2.794" y="2.413" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-3.556" size="1.27" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BM62">
@@ -2896,6 +2911,22 @@ MAX3223-MAX3243.pdf</description>
 <pin name="G" x="-2.54" y="-2.54" visible="off" length="point" direction="pas"/>
 <pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="LM25085">
+<pin name="VIN" x="-12.7" y="10.16" length="middle"/>
+<pin name="RT" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-10.16" length="middle"/>
+<pin name="VCC" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="ADJ" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="ISEN" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="PGATE" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="FB" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="13.462" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4122,6 +4153,7 @@ up to 600W into PBTL Mono</description>
 </devices>
 </deviceset>
 <deviceset name="MAX1737" prefix="U">
+<description>1-4s lithium battery charge controller</description>
 <gates>
 <gate name="G$1" symbol="MAX1737" x="0" y="0"/>
 </gates>
@@ -4164,6 +4196,7 @@ up to 600W into PBTL Mono</description>
 </devices>
 </deviceset>
 <deviceset name="LM74700-Q1" prefix="U">
+<description>Ideal diode controller</description>
 <gates>
 <gate name="G$1" symbol="LM74700-Q1" x="0" y="0"/>
 </gates>
@@ -4334,6 +4367,45 @@ up to 600W into PBTL Mono</description>
 <connect gate="D" pin="+IN" pad="12"/>
 <connect gate="D" pin="-IN" pad="13"/>
 <connect gate="D" pin="OUT" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM25085" prefix="U">
+<description>Buck controller</description>
+<gates>
+<gate name="G$1" symbol="LM25085" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VSSOP8">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="1"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="ISEN" pad="5"/>
+<connect gate="G$1" pin="PGATE" pad="6"/>
+<connect gate="G$1" pin="RT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DO-214AA-SCHOTTKY" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
