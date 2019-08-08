@@ -84,6 +84,7 @@
 <wire x1="4.93" y1="11.17" x2="4.93" y2="0.4" width="0.127" layer="21"/>
 <text x="-4.318" y="9.652" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.318" y="8.001" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-9.93" y1="0" x2="-4.93" y2="4" layer="39"/>
 </package>
 <package name="TE-770970">
 <wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.127" layer="51"/>
@@ -327,11 +328,19 @@
 <text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="3" x="2.54" y="0" drill="1"/>
 </package>
+<package name="4PIN">
+<pad name="1" x="-3.81" y="0" drill="1" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="1"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="3" x="1.27" y="0" drill="1"/>
+<pad name="4" x="3.81" y="0" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POL-SPEAKER">
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="+" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
@@ -584,8 +593,8 @@
 <devices>
 <device name="" package="TE-770966">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -810,6 +819,27 @@ with integrated thermistor</description>
 <connect gate="A" pin="P$1" pad="1"/>
 <connect gate="B" pin="P$1" pad="2"/>
 <connect gate="C" pin="P$1" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GEN-4PIN" prefix="J" uservalue="yes">
+<gates>
+<gate name="A" symbol="PIN" x="0" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="PIN" x="0" y="2.54" swaplevel="1"/>
+<gate name="C" symbol="PIN" x="0" y="-5.08" swaplevel="1"/>
+<gate name="D" symbol="PIN" x="0" y="-12.7" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="4PIN">
+<connects>
+<connect gate="A" pin="P$1" pad="1"/>
+<connect gate="B" pin="P$1" pad="2"/>
+<connect gate="C" pin="P$1" pad="3"/>
+<connect gate="D" pin="P$1" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
