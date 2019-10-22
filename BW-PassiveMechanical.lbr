@@ -544,6 +544,21 @@ Metric Code Size 3216</description>
 <text x="-3.048" y="0.381" size="1.27" layer="21" ratio="12">&gt;NAME</text>
 <text x="-3.048" y="-1.27" size="1.27" layer="21" ratio="12">&gt;VALUE</text>
 </package>
+<package name="CHERRYMX">
+<hole x="0" y="0" drill="3.9878"/>
+<hole x="5.08" y="0" drill="1.7018"/>
+<hole x="-5.08" y="0" drill="1.7018"/>
+<pad name="S1" x="3.81" y="-2.54" drill="1.4986" rot="R180"/>
+<pad name="S2" x="-2.54" y="-5.08" drill="1.4986" rot="R180"/>
+<pad name="L1" x="1.27" y="5.08" drill="0.9906" rot="R180"/>
+<pad name="L2" x="-1.27" y="5.08" drill="0.9906" rot="R180"/>
+<wire x1="-7.747" y1="7.747" x2="7.747" y2="7.747" width="0.127" layer="21"/>
+<wire x1="7.747" y1="7.747" x2="7.747" y2="-7.747" width="0.127" layer="21"/>
+<wire x1="7.747" y1="-7.747" x2="-7.747" y2="-7.747" width="0.127" layer="21"/>
+<wire x1="-7.747" y1="-7.747" x2="-7.747" y2="7.747" width="0.127" layer="21"/>
+<text x="-6.985" y="6.096" size="1.27" layer="21">&gt;NAME</text>
+<text x="-1.016" y="-7.239" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="THERMISTOR">
@@ -1488,6 +1503,25 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CAY16-102J8LF
 <connect gate="L" pin="C" pad="6"/>
 <connect gate="S" pin="1" pad="1 2" route="any"/>
 <connect gate="S" pin="2" pad="3 4" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CHERRYMX" prefix="SW">
+<gates>
+<gate name="S" symbol="SWITCH-NO" x="0" y="7.62"/>
+<gate name="L" symbol="LED" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="CHERRYMX">
+<connects>
+<connect gate="L" pin="A" pad="L1"/>
+<connect gate="L" pin="C" pad="L2"/>
+<connect gate="S" pin="1" pad="S1"/>
+<connect gate="S" pin="2" pad="S2"/>
 </connects>
 <technologies>
 <technology name=""/>
