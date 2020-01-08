@@ -559,6 +559,20 @@ Metric Code Size 3216</description>
 <text x="-6.985" y="6.096" size="1.27" layer="21">&gt;NAME</text>
 <text x="-1.016" y="-7.239" size="1.27" layer="21">&gt;VALUE</text>
 </package>
+<package name="RLB0912">
+<pad name="1" x="-2.5" y="0" drill="1"/>
+<pad name="2" x="2.5" y="0" drill="1"/>
+<circle x="0" y="0" radius="4.35" width="0.127" layer="21"/>
+<text x="-2.5" y="1.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="15153C">
+<pad name="1" x="-7.2" y="0" drill="1.5"/>
+<pad name="2" x="7.2" y="0" drill="1.5"/>
+<circle x="0" y="0" radius="8.4" width="0.127" layer="21"/>
+<text x="-2.5" y="1.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="THERMISTOR">
@@ -1522,6 +1536,40 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CAY16-102J8LF
 <connect gate="L" pin="C" pad="L2"/>
 <connect gate="S" pin="1" pad="S1"/>
 <connect gate="S" pin="2" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RLB0912" prefix="L" uservalue="yes">
+<description>Low-med current inductor</description>
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RLB0912">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="15153C" prefix="L" uservalue="yes">
+<description>Med-high current inductor, 15uH spec</description>
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="15153C">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -4427,11 +4427,11 @@ Source: http://focus.ti.com/lit/ml/mpds044/mpds044.pdf / slma002.pdf</descriptio
 <pin name="M3" x="-20.32" y="-25.4" length="middle"/>
 </symbol>
 <symbol name="TPS54308">
-<pin name="GND" x="-12.7" y="2.54" length="middle"/>
-<pin name="SW" x="-12.7" y="0" length="middle"/>
-<pin name="VIN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SW" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
 <pin name="BOOT" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="EN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="-12.7" y="0" length="middle"/>
 <pin name="FB" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
@@ -6445,7 +6445,7 @@ up to 600W into PBTL Mono</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPAK-LDO" prefix="U">
+<deviceset name="DPAK-LDO" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="VREG" x="0" y="0"/>
 </gates>
