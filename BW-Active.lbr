@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5187,20 +5187,20 @@ up to 600W into PBTL Mono</description>
 </device>
 <device name="-CON" package="2X9PIN">
 <connects>
-<connect gate="G$1" pin="!CS" pad="6"/>
-<connect gate="G$1" pin="!INT" pad="7"/>
-<connect gate="G$1" pin="!PD" pad="8"/>
-<connect gate="G$1" pin="AUDIO_L" pad="9"/>
-<connect gate="G$1" pin="GND" pad="2 17 18"/>
+<connect gate="G$1" pin="!CS" pad="7"/>
+<connect gate="G$1" pin="!INT" pad="8"/>
+<connect gate="G$1" pin="!PD" pad="9"/>
+<connect gate="G$1" pin="AUDIO_L" pad="10"/>
+<connect gate="G$1" pin="GND" pad="1 16 18"/>
 <connect gate="G$1" pin="GPIO0/IO2" pad="11"/>
 <connect gate="G$1" pin="GPIO1/IO3" pad="12"/>
 <connect gate="G$1" pin="GPIO2" pad="13"/>
 <connect gate="G$1" pin="GPIO3" pad="14"/>
-<connect gate="G$1" pin="MISO/IO1" pad="4"/>
-<connect gate="G$1" pin="MOSI/IO0" pad="5"/>
-<connect gate="G$1" pin="SCK" pad="3"/>
-<connect gate="G$1" pin="VBL" pad="15 16"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="MISO/IO1" pad="5"/>
+<connect gate="G$1" pin="MOSI/IO0" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="VBL" pad="15 17"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

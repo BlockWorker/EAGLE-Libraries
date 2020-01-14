@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -572,6 +572,16 @@ Metric Code Size 3216</description>
 <circle x="0" y="0" radius="8.4" width="0.127" layer="21"/>
 <text x="-2.5" y="1.25" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="1D14A">
+<wire x1="-7.5" y1="5.25" x2="-7.5" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-5.25" x2="7.5" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-5.25" x2="7.5" y2="5.25" width="0.127" layer="21"/>
+<wire x1="7.5" y1="5.25" x2="-7.5" y2="5.25" width="0.127" layer="21"/>
+<pad name="1" x="-4.6" y="2.65" drill="1"/>
+<pad name="2" x="4.6" y="-2.65" drill="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1567,6 +1577,23 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CAY16-102J8LF
 </gates>
 <devices>
 <device name="" package="15153C">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1D14A" prefix="L" uservalue="yes">
+<description>High Isat audio inductor</description>
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1D14A">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
