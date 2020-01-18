@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -384,6 +384,8 @@ Metric Code Size 3216</description>
 <smd name="2" x="6.2" y="0.75" dx="2.3" dy="1.4" layer="1"/>
 <smd name="3" x="-1.7" y="3.75" dx="2.3" dy="1.4" layer="1"/>
 <smd name="4" x="6.2" y="3.75" dx="2.3" dy="1.4" layer="1"/>
+<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PM5022">
 <smd name="1" x="-7.9" y="0" dx="3.1" dy="2.9" layer="1"/>
@@ -582,6 +584,18 @@ Metric Code Size 3216</description>
 <pad name="2" x="4.6" y="-2.65" drill="1"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SDA01H1S">
+<smd name="1" x="0" y="-4.318" dx="1.524" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="4.318" dx="1.524" dy="2.54" layer="1"/>
+<wire x1="-2.2606" y1="3.81" x2="-2.2606" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.2606" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="3.81" x2="-2.2606" y2="3.81" width="0.127" layer="21"/>
+<wire x1="1.27" y1="3.81" x2="2.2606" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.2606" y1="3.81" x2="2.2606" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.2606" y1="-3.81" x2="1.27" y2="-3.81" width="0.127" layer="21"/>
+<text x="-2.794" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.064" y="-3.429" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1594,6 +1608,41 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CAY16-102J8LF
 </gates>
 <devices>
 <device name="" package="1D14A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIRED-SWITCH-U" prefix="SW" uservalue="yes">
+<description>Double-throw switch with wire/header connections</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WIRE-3P-SIMPLE">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDA01H1S" prefix="SW">
+<description>1-position DIP switch, SMD</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-NO" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SDA01H1S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
