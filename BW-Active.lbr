@@ -3423,6 +3423,7 @@ Source: http://focus.ti.com/lit/ml/mpds044/mpds044.pdf / slma002.pdf</descriptio
 <text x="5.334" y="16.002" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-12.192" y="16.002" size="1.778" layer="95">&gt;NAME</text>
 <pin name="GND_BL" x="-17.78" y="-5.08" length="middle"/>
+<pin name="NC1" x="-17.78" y="2.54" length="middle"/>
 </symbol>
 <symbol name="TVS-DIODE">
 <wire x1="0" y1="1.524" x2="0" y2="-1.524" width="0.254" layer="94"/>
@@ -5208,6 +5209,7 @@ up to 600W into PBTL Mono</description>
 <connect gate="G$1" pin="GPIO3" pad="14"/>
 <connect gate="G$1" pin="MISO/IO1" pad="4"/>
 <connect gate="G$1" pin="MOSI/IO0" pad="5"/>
+<connect gate="G$1" pin="NC1" pad="10"/>
 <connect gate="G$1" pin="SCK" pad="3"/>
 <connect gate="G$1" pin="VBL" pad="17 18"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
@@ -5230,6 +5232,7 @@ up to 600W into PBTL Mono</description>
 <connect gate="G$1" pin="GPIO3" pad="14"/>
 <connect gate="G$1" pin="MISO/IO1" pad="5"/>
 <connect gate="G$1" pin="MOSI/IO0" pad="6"/>
+<connect gate="G$1" pin="NC1" pad="3"/>
 <connect gate="G$1" pin="SCK" pad="4"/>
 <connect gate="G$1" pin="VBL" pad="15 17"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
@@ -6543,6 +6546,38 @@ up to 600W into PBTL Mono</description>
 <connect gate="M" pin="GND" pad="8"/>
 <connect gate="M" pin="S" pad="1"/>
 <connect gate="M" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCS4333" prefix="U">
+<description>Quad op amp, very low offset voltage</description>
+<gates>
+<gate name="A" symbol="OPAMP+-" x="-17.78" y="12.7" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="20.32" y="12.7" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="-17.78" y="-15.24" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="20.32" y="-15.24" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="A" pin="V+" pad="4"/>
+<connect gate="A" pin="V-" pad="11"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>
