@@ -6585,6 +6585,30 @@ up to 600W into PBTL Mono</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="NCS2333" prefix="U">
+<description>Dual op amp, very low offset voltage</description>
+<gates>
+<gate name="A" symbol="OPAMP+-" x="0" y="17.78"/>
+<gate name="B" symbol="OPAMP" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="A" pin="V+" pad="8"/>
+<connect gate="A" pin="V-" pad="4"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
