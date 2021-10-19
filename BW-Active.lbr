@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2766,6 +2766,89 @@ Source: http://focus.ti.com/lit/ml/mpds044/mpds044.pdf / slma002.pdf</descriptio
 <pad name="17" x="11.43" y="1.27" drill="1"/>
 <pad name="18" x="11.43" y="-1.27" drill="1"/>
 </package>
+<package name="SOT563" urn="urn:adsk.eagle:footprint:29873/1" locally_modified="yes">
+<description>&lt;b&gt;SOT-563&lt;/b&gt;&lt;p&gt;
+Source: www.centralsemi.com ..SOT-563PD.pdf</description>
+<wire x1="-0.8" y1="0.55" x2="-0.8" y2="-0.55" width="0.1016" layer="21"/>
+<wire x1="0.8" y1="-0.55" x2="0.8" y2="0.55" width="0.1016" layer="21"/>
+<wire x1="-0.8" y1="0.55" x2="0.8" y2="0.55" width="0.1016" layer="51"/>
+<wire x1="-0.8" y1="-0.55" x2="0.8" y2="-0.55" width="0.1016" layer="51"/>
+<circle x="-0.575" y="-0.198" radius="0.075" width="0" layer="21"/>
+<smd name="1" x="-0.5" y="-0.9" dx="0.3" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.3" dy="0.8" layer="1"/>
+<smd name="3" x="0.5" y="-0.9" dx="0.3" dy="0.8" layer="1"/>
+<smd name="4" x="0.5" y="0.9" dx="0.3" dy="0.8" layer="1" rot="R180"/>
+<smd name="5" x="0" y="0.9" dx="0.3" dy="0.8" layer="1" rot="R180"/>
+<smd name="6" x="-0.5" y="0.9" dx="0.3" dy="0.8" layer="1" rot="R180"/>
+<text x="-1.27" y="1.524" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.65" y1="-0.85" x2="-0.35" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="-0.15" y1="-0.85" x2="0.15" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="0.35" y1="-0.85" x2="0.65" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="0.35" y1="0.55" x2="0.65" y2="0.85" layer="51"/>
+<rectangle x1="-0.15" y1="0.55" x2="0.15" y2="0.85" layer="51"/>
+<rectangle x1="-0.65" y1="0.55" x2="-0.35" y2="0.85" layer="51"/>
+</package>
+<package name="SOIC8-EP">
+<description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
+Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF&lt;p&gt;
+&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;PLATIC SMALL-OUTLINE PACKAGE&lt;br&gt;
+Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="EP" x="0" y="0" dx="3.2" dy="2.5" layer="1"/>
+<circle x="-2.032" y="-1.524" radius="0.06" width="0.127" layer="21"/>
+</package>
+<package name="SCD30">
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1"/>
+<pad name="3" x="5.08" y="0" drill="1"/>
+<pad name="4" x="7.62" y="0" drill="1"/>
+<pad name="5" x="10.16" y="0" drill="1"/>
+<pad name="6" x="12.7" y="0" drill="1"/>
+<pad name="7" x="15.24" y="0" drill="1"/>
+<wire x1="-1.4" y1="1.4" x2="-1.4" y2="-21.6" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-21.6" x2="33.6" y2="-21.6" width="0.127" layer="51"/>
+<wire x1="33.6" y1="-21.6" x2="33.6" y2="1.4" width="0.127" layer="51"/>
+<wire x1="33.6" y1="1.4" x2="-1.4" y2="1.4" width="0.127" layer="51"/>
+<text x="-0.889" y="-2.921" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-4.699" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SCD30-MIRRORED">
+<pad name="1" x="0" y="0" drill="1" shape="square" rot="R180"/>
+<pad name="2" x="-2.54" y="0" drill="1" rot="R180"/>
+<pad name="3" x="-5.08" y="0" drill="1" rot="R180"/>
+<pad name="4" x="-7.62" y="0" drill="1" rot="R180"/>
+<pad name="5" x="-10.16" y="0" drill="1" rot="R180"/>
+<pad name="6" x="-12.7" y="0" drill="1" rot="R180"/>
+<pad name="7" x="-15.24" y="0" drill="1" rot="R180"/>
+<wire x1="-33.6" y1="1.4" x2="-33.6" y2="-21.6" width="0.127" layer="51"/>
+<wire x1="-33.6" y1="-21.6" x2="1.4" y2="-21.6" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-21.6" x2="1.4" y2="1.4" width="0.127" layer="51"/>
+<wire x1="1.4" y1="1.4" x2="-33.6" y2="1.4" width="0.127" layer="51"/>
+<text x="-5.969" y="-2.921" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.969" y="-4.699" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BM62">
@@ -4471,6 +4554,102 @@ Source: http://focus.ti.com/lit/ml/mpds044/mpds044.pdf / slma002.pdf</descriptio
 <text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TPS61023">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="0" length="middle"/>
+<pin name="EN" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="8.636" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DIO5508">
+<pin name="VCC" x="-15.24" y="2.54" length="middle"/>
+<pin name="CE" x="-15.24" y="0" length="middle"/>
+<pin name="CHRGB" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DONE" x="-15.24" y="-5.08" length="middle"/>
+<pin name="BAT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="TEMP" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="PROG" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PIC24FJ*GU405">
+<pin name="RE5" x="-27.94" y="12.7" length="middle"/>
+<pin name="RE6" x="-27.94" y="10.16" length="middle"/>
+<pin name="RE7" x="-27.94" y="7.62" length="middle"/>
+<pin name="RG7" x="-27.94" y="5.08" length="middle"/>
+<pin name="RG8" x="-27.94" y="2.54" length="middle"/>
+<pin name="!MCLR" x="-27.94" y="0" length="middle"/>
+<pin name="VSS" x="-27.94" y="-2.54" length="middle"/>
+<pin name="VDD" x="-27.94" y="-5.08" length="middle"/>
+<pin name="RB5" x="-27.94" y="-7.62" length="middle"/>
+<pin name="RB4" x="-27.94" y="-10.16" length="middle"/>
+<pin name="RB1" x="-27.94" y="-12.7" length="middle"/>
+<pin name="RB0" x="-27.94" y="-15.24" length="middle"/>
+<pin name="RB6" x="-12.7" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB7" x="-10.16" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB8" x="-2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB9" x="0" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB10" x="2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB11" x="5.08" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB14" x="7.62" y="-30.48" length="middle" rot="R90"/>
+<pin name="RB15" x="10.16" y="-30.48" length="middle" rot="R90"/>
+<pin name="RF4" x="12.7" y="-30.48" length="middle" rot="R90"/>
+<pin name="RF7" x="15.24" y="-30.48" length="middle" rot="R90"/>
+<pin name="VUSB3V3" x="30.48" y="-15.24" length="middle" rot="R180"/>
+<pin name="RG3" x="30.48" y="-12.7" length="middle" rot="R180"/>
+<pin name="RG2" x="30.48" y="-10.16" length="middle" rot="R180"/>
+<pin name="RC12" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="RC15" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="RD10" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="RD11" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="RD0" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="RC13" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="RC14" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="RD3" x="15.24" y="27.94" length="middle" rot="R270"/>
+<pin name="RD4" x="12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="RD5" x="10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="RD6" x="7.62" y="27.94" length="middle" rot="R270"/>
+<pin name="RD7" x="5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="VCAP" x="2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="RF1" x="-2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="RE0" x="-5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="RE1" x="-7.62" y="27.94" length="middle" rot="R270"/>
+<pin name="RE2" x="-10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="RE3" x="-12.7" y="27.94" length="middle" rot="R270"/>
+<wire x1="-22.86" y1="22.86" x2="-22.86" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-25.4" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-25.4" x2="25.4" y2="22.86" width="0.254" layer="94"/>
+<wire x1="25.4" y1="22.86" x2="-22.86" y2="22.86" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="SCD30">
+<pin name="VDD" x="-10.16" y="7.62" length="middle"/>
+<pin name="GND" x="-10.16" y="5.08" length="middle"/>
+<pin name="TX/SCL" x="-10.16" y="2.54" length="middle"/>
+<pin name="RX/SDA" x="-10.16" y="0" length="middle"/>
+<pin name="RDY" x="-10.16" y="-2.54" length="middle"/>
+<pin name="PWM" x="-10.16" y="-5.08" length="middle"/>
+<pin name="SEL" x="-10.16" y="-7.62" length="middle"/>
+<wire x1="-5.08" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TPA3255" prefix="U">
@@ -4851,7 +5030,7 @@ up to 600W into PBTL Mono</description>
 </devices>
 </deviceset>
 <deviceset name="PIC16F15368" prefix="U">
-<description>16-bit 32MHz microcontroller, 48 pin</description>
+<description>8-bit 32MHz microcontroller, 48-pin</description>
 <gates>
 <gate name="G$1" symbol="PIC16F15368" x="0" y="0"/>
 </gates>
@@ -6602,6 +6781,144 @@ up to 600W into PBTL Mono</description>
 <connect gate="B" pin="+IN" pad="5"/>
 <connect gate="B" pin="-IN" pad="6"/>
 <connect gate="B" pin="OUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61023" prefix="U">
+<description>Low voltage boost converter with pass-through</description>
+<gates>
+<gate name="G$1" symbol="TPS61023" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT563">
+<connects>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SW" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIO5508" prefix="U">
+<description>Single cell Li-ion battery charger</description>
+<gates>
+<gate name="G$1" symbol="DIO5508" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8-EP">
+<connects>
+<connect gate="G$1" pin="BAT" pad="5"/>
+<connect gate="G$1" pin="CE" pad="8"/>
+<connect gate="G$1" pin="CHRGB" pad="7"/>
+<connect gate="G$1" pin="DONE" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3 EP"/>
+<connect gate="G$1" pin="PROG" pad="2"/>
+<connect gate="G$1" pin="TEMP" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC24FJ*GU405" prefix="U">
+<description>16-bit 32MHz microcontroller with USB, 48-pin</description>
+<gates>
+<gate name="G$1" symbol="PIC24FJ*GU405" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP48">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="6"/>
+<connect gate="G$1" pin="RB0" pad="12"/>
+<connect gate="G$1" pin="RB1" pad="11"/>
+<connect gate="G$1" pin="RB10" pad="19"/>
+<connect gate="G$1" pin="RB11" pad="20"/>
+<connect gate="G$1" pin="RB14" pad="21"/>
+<connect gate="G$1" pin="RB15" pad="22"/>
+<connect gate="G$1" pin="RB4" pad="10"/>
+<connect gate="G$1" pin="RB5" pad="9"/>
+<connect gate="G$1" pin="RB6" pad="13"/>
+<connect gate="G$1" pin="RB7" pad="14"/>
+<connect gate="G$1" pin="RB8" pad="17"/>
+<connect gate="G$1" pin="RB9" pad="18"/>
+<connect gate="G$1" pin="RC12" pad="29"/>
+<connect gate="G$1" pin="RC13" pad="35"/>
+<connect gate="G$1" pin="RC14" pad="36"/>
+<connect gate="G$1" pin="RC15" pad="30"/>
+<connect gate="G$1" pin="RD0" pad="34"/>
+<connect gate="G$1" pin="RD10" pad="32"/>
+<connect gate="G$1" pin="RD11" pad="33"/>
+<connect gate="G$1" pin="RD3" pad="37"/>
+<connect gate="G$1" pin="RD4" pad="38"/>
+<connect gate="G$1" pin="RD5" pad="39"/>
+<connect gate="G$1" pin="RD6" pad="40"/>
+<connect gate="G$1" pin="RD7" pad="41"/>
+<connect gate="G$1" pin="RE0" pad="45"/>
+<connect gate="G$1" pin="RE1" pad="46"/>
+<connect gate="G$1" pin="RE2" pad="47"/>
+<connect gate="G$1" pin="RE3" pad="48"/>
+<connect gate="G$1" pin="RE5" pad="1"/>
+<connect gate="G$1" pin="RE6" pad="2"/>
+<connect gate="G$1" pin="RE7" pad="3"/>
+<connect gate="G$1" pin="RF1" pad="44"/>
+<connect gate="G$1" pin="RF4" pad="23"/>
+<connect gate="G$1" pin="RF7" pad="24"/>
+<connect gate="G$1" pin="RG2" pad="27"/>
+<connect gate="G$1" pin="RG3" pad="26"/>
+<connect gate="G$1" pin="RG7" pad="4"/>
+<connect gate="G$1" pin="RG8" pad="5"/>
+<connect gate="G$1" pin="VCAP" pad="42"/>
+<connect gate="G$1" pin="VDD" pad="8 15 28"/>
+<connect gate="G$1" pin="VSS" pad="7 16 31 43" route="any"/>
+<connect gate="G$1" pin="VUSB3V3" pad="25"/>
+</connects>
+<technologies>
+<technology name="*"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCD30" prefix="A">
+<description>CO2, temperature and humidity sensor module</description>
+<gates>
+<gate name="G$1" symbol="SCD30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCD30">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PWM" pad="6"/>
+<connect gate="G$1" pin="RDY" pad="5"/>
+<connect gate="G$1" pin="RX/SDA" pad="4"/>
+<connect gate="G$1" pin="SEL" pad="7"/>
+<connect gate="G$1" pin="TX/SCL" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="(M)" package="SCD30-MIRRORED">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PWM" pad="6"/>
+<connect gate="G$1" pin="RDY" pad="5"/>
+<connect gate="G$1" pin="RX/SDA" pad="4"/>
+<connect gate="G$1" pin="SEL" pad="7"/>
+<connect gate="G$1" pin="TX/SCL" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
